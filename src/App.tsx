@@ -18,7 +18,7 @@ function App() {
   const [copied, setCopied] = useState(false);
   const [replacements, setReplacements] = useLocalStorage<ReplacementPair[]>('replacements', []);
   const [history, setHistory] = useSessionStorage<HistoryItem[]>('history', []);
-  const [theme, setTheme] = useLocalStorage<Theme>('theme', 'light');
+  const [theme, setTheme] = useLocalStorage<Theme>('theme', 'dark');
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
 
   // Apply theme to document
